@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ultimate College Life Web Page</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Sections */
+        section, header, footer { padding: 60px 10%; text-align: center; }
+        
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://www.adnu.edu.ph/wp-content/uploads/2023/01/20220604_093908-1024x423.jpg') center/cover;
+            display: flex; flex-direction: column; justify-content: center; color: white;
+        }
+
+        /* About Section */
+        .about { display: flex; align-items: center; gap: 40px; text-align: left; background: #fff; }
+        .about img { width: 300px; box-shadow: 15px 15px 0 #0046a0; }
+
+        /* Background Sections */
+        .must-haves {
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), 
+                        url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=1000') center/cover fixed;
+        }
+        .routine {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&w=1000') center/cover fixed;
+            color: white;
+        }
+
+        /* Buttons & Lists */
+        ul, ol { display: inline-block; text-align: left; }
+        button { padding: 15px 30px; cursor: pointer; background: #4ca9a9; color: white; border: none; font-weight: bold; }
+        hr { border: 2px solid #0046a0; width: 50px; margin-left: 0; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <p>Ateneo Student Journey</p>
+        <h1>College Life</h1>
+        <h3>John Mathew C. Hemady</h3>
+    </header>
+
+    <section class="about">
+        <div>
+            <h2>Turning Goals into Checklists</h2>
+            <hr>
+            <p>I’m a student who turns goals into checklists and checklists into achievements. I enjoy staying organized and pushing myself to understand topics beyond the surface.</p>
+            <p><i>Hobbies:</i> 🏀 <b>Basketball</b> is my favorite way to stay energized, and I love 🍕 snacks during late-night study sessions.</p>
+        </div>
+        <img src="jm.jpg.jpg" alt="John Mathew Hemady Profile">
+    </section>
+
+    <section class="must-haves">
+        <h2>College Survival Kit</h2>
+        <ul>
+            <li>☕ <b>Coffee or Tea</b> – For a chill energy boost.</li>
+            <li>💻 <b>Laptop</b> – For homework and browsing memes.</li>
+            <li>🎧 <b>Headphones</b> – For focusing in noisy places.</li>
+            <li>🎒 <b>Backpack</b> – Big enough for snacks and hoodies.</li>
+            <li>📱 <b>Phone Apps</b> – For schedules and group chats.</li>
+            <li>📝 <b>Notebook</b> – To jot things down quickly.</li>
+        </ul>
+    </section>
+
+    <section class="routine">
+        <h2>Daily Momentum</h2>
+        <ol>
+            <li><b>Morning:</b> Wake up at a relaxed pace and have breakfast.</li>
+            <li><b>Afternoon:</b> Classes and study time with headphones.</li>
+            <li><b>Night:</b> Wrap up assignments and enjoy some chill games.</li>
+        </ol>
+    </section>
+
+    <footer>
+        <h2>Creative Expression</h2>
+        <p>Passion for art, poster making, and national-level editorial cartooning.</p>
+        <button onclick="revealMessage()">Check My Daily Vibe</button>
+        <p id="vibe-text"></p>
+    </footer>
+
+    <script>
+        function revealMessage() {
+            document.getElementById('vibe-text').innerHTML = "<b>STATUS: PUSHING FOR EXCELLENCE 🚀</b>";
+            alert("Mindset: Ready for whatever comes next!");
+        }
+    </script>
+
+</body>
+</html>
